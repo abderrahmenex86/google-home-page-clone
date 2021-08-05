@@ -12,7 +12,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles/search.css" rel="stylesheet" />
     <title>Google</title>
   </head>
@@ -39,8 +44,12 @@
 
         <!-- flex item3 -->
         <div id="upper-right">
-          <a href="#" id="settings"><span class="material-icons">settings</span></a>
-          <a href="#"id="apps"><span class="material-icons md-light">apps</span></a>
+          <a href="#" id="settings"
+            ><span class="material-icons">settings</span></a
+          >
+          <a href="#" id="apps"
+            ><span class="material-icons md-light">apps</span></a
+          >
           <a href="https://github.com/i07m96">
             <img
               src="https://avatars.githubusercontent.com/u/77858997?v=4"
@@ -63,7 +72,7 @@
 
     <!--Google actual search box and logo and the additional stuff-->
     <main>
-      <p>About 132,000,000 results (0.36 seconds)</p>
+      <p id="search-time">About 132,000,000 results (0.36 seconds)</p>
       <div class="results">
         <a href="#" class="sup-link">
           <p>https://www.Lorem-ipsum-dolor-sit-amet.com/</p>
@@ -306,6 +315,35 @@
           risus, tincidunt in tempus id, gravida sed eros. Nulla nec ligula eu
           sem faucibus eleifend. Donec tincidunt molestie velit at finibus.
         </p>
+      </div>
+      <div id="search-page-footer">
+        <div id="google">
+          <p class="google" style="color: blue">G</p>
+          <p class="google" style="color: red">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: yellow">o</p>
+          <p class="google" style="color: blue">g</p>
+          <p class="google" style="color: green">l</p>
+          <p class="google" style="color: red">e</p>
+        </div>
+        <div id="numbers">
+          <a class="numbers"></a>
+          <a href="#" class="numbers"><p>1</p></a>
+          <a href="#" class="numbers"><p>2</p></a>
+          <a href="#" class="numbers"><p>3</p></a>
+          <a href="#" class="numbers"><p>4</p></a>
+          <a href="#" class="numbers"><p>5</p></a>
+          <a href="#" class="numbers"><p>6</p></a>
+          <a href="#" class="numbers"><p>7</p></a>
+          <a href="#" class="numbers"><p>8</p></a>
+          <a href="#" class="numbers"><p>9</p></a>
+        </div>
       </div>
     </main>
     <!--End Google search box-->
@@ -314,23 +352,20 @@
     <footer>
       <!--Nav one starts-->
       <nav class="upper-navbar">
-        <p>Location</p>
+        <p id="location">Location</p>
+        <p id="where">
+          Somewhere beautiful- Based on your past activity - Use precise
+          location - Learn more
+        </p>
       </nav>
       <!--Nav one stops-->
 
       <!--Nav two starts-->
       <nav class="bottom-navbar">
-        <div id="bottom-navbar-left">
-          <a href="#">About</a>
-          <a href="#">Advertising</a>
-          <a href="#">Business</a>
-          <a href="#">How search works</a>
-        </div>
-        <div id="bottom-navbar-right">
+          <a href="#">Help</a>
+          <a href="#">Send feedback</a>
           <a href="#">Privacy</a>
-          <a href="#">terms</a>
-          <a href="#">Settings</a>
-        </div>
+          <a href="#">Terms</a>
       </nav>
       <!--Nav two ends-->
     </footer>

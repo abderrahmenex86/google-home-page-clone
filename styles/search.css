@@ -1,10 +1,12 @@
 html {
   background-color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
 }
 body {
   display: grid;
   grid-template-rows: auto auto auto;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
 }
 img {
   height: 20px;
@@ -19,6 +21,11 @@ header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgb(221, 221, 221);
+  padding-bottom: 12px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 header #navbar-upper-navbar {
@@ -94,4 +101,110 @@ header #navbar-lower-navbar {
   margin-left: 130px;
   width: 675px;
   justify-items: flex-end;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, auto);
+  margin: 0px 0px 0px 155px;
+  inline-size: 675px;
+}
+
+main #search-time {
+  margin: 15px 0px 20px 0px;
+  color: black;
+  opacity: 40%;
+}
+
+main div {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 10px 0px 10px 0px;
+}
+main div p {
+  margin: 0px;
+  inline-size: 600px;
+  opacity: 95%;
+}
+
+main div .sup-link p {
+  color: black;
+  opacity: 50%;
+  font-size: small;
+}
+main div .middle-link p {
+  color: blue;
+  font-size: large;
+}
+
+main #search-page-footer {
+  width: 675px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+main #search-page-footer #google {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(13, 35px);
+  font-size: 28px;
+}
+
+main #search-page-footer #google .google {
+  width: auto;
+}
+
+main #search-page-footer #numbers {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+}
+
+main #search-page-footer #numbers p {
+  color: rgb(102, 102, 255);
+}
+main #search-page-footer p {
+  width: max-content;
+}
+main #search-page-footer a {
+  width: max-content;
+}
+footer {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+footer .upper-navbar {
+  background-color: rgb(241, 241, 241);
+  margin-left: -20px;
+  margin-right: -20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: flex-start;
+}
+footer .upper-navbar p {
+  padding-left: 180px;
+}
+footer .upper-navbar #location {
+  border-right-style: solid;
+  padding-right: 10px;
+  border-right-width: 1px;
+}
+/* footer .upper-navbar p {
+  padding-left: 20px;
+} */
+footer .upper-navbar #where {
+  padding-left: 30px;
+  margin-left: -550px;
+}
+
+footer .bottom-navbar {
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  margin-left: -20px;
+  padding-left: 180px;
+  margin-right: -20px;
+  padding-bottom: 20px;
+}
+footer .bottom-navbar a {
+  width: max-content;
 }
