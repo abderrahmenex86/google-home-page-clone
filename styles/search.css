@@ -1,323 +1,97 @@
-/*@import url("reset.css");*/
-
-:root {
-  --grey: rgb(0, 0, 0);
-  --blue: rgb(0, 0, 255);
-  --violet: rgb(108, 0, 180);
-}
-
 html {
-    height: 100%;
-}
-
-body {
   background-color: white;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  font-size: 14px;
-  gap: 0px;
 }
-
-/* ##################UPPER################## */
-header {
-  padding: 20px;
+body {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  margin: 20px;
+}
+img {
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+header {
+  display: grid;
+  grid-template-rows: auto auto;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-color: rgb(219, 219, 219);
-  padding-bottom: 0px;
-  height: 107px;
+  border-bottom-color: rgb(221, 221, 221);
 }
 
 header #navbar-upper-navbar {
-  margin-top: 5px;
-  font-size: 12px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+header #navbar-upper-navbar {
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
 }
 
-header #navbar-upper-navbar img {
-  width: 7vw;
-  margin-top: 3px;
-}
-
-header #navbar-upper-navbar #upper-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-header #navbar-upper-navbar #upper-right img {
-  margin-bottom: 10px;
-}
-header #navbar-upper-navbar form label button {
+header #navbar-upper-navbar #logo {
+  width: 100px;
   height: auto;
-  position: relative;
-  top: 5px;
-  /* background-color: black; */
 }
-header #navbar-upper-navbar form label button span {
-  opacity: 50%;
-  padding-right: 50px;
+header #navbar-upper-navbar form {
+  width: 1000px;
 }
 
-header #navbar-upper-navbar #upper-right a span {
-  margin-top: 3px;
-}
-
-header nav form {
-  margin-right: 28vw;
+header #navbar-upper-navbar form input {
+  width: 675px;
+  height: 46px;
+  justify-self: flex-start;
   border-radius: 50px;
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(219, 219, 219);
-  box-shadow: 5px 5px 40px -20px rgb(146, 146, 146);
-}
-
-header nav form input[type="text"] {
-  width: 40vw;
-  height: 45px;
-  padding-right: 50px;
-  border-radius: 50px;
-  border-width: 1px;
-  border-style: none;
-  border-color: rgb(219, 219, 219);
-  justify-self: stretch;
+  box-shadow: 1px 1px 20px -6px grey;
   padding-left: 20px;
 }
 
-header nav form button[type="submit"] {
-  margin-left: -50px;
-  height: 40px;
-  width: 50px;
+header #navbar-upper-navbar form button {
   background-color: transparent;
-  border-style: none;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: 5px;
+  right: 50px;
+  opacity: 50%;
 }
 
-header nav a #google-account {
+header #navbar-upper-navbar #upper-right {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 150px;
+  height: auto;
+  align-items: center;
+  justify-items: end;
+  gap: 0px;
+}
+
+header #navbar-upper-navbar #upper-right img {
   border-radius: 50%;
-  width: 35px;
-  margin: 10px 10px 0px 0px;
+  height: 40px;
+  width: auto;
 }
 
-header nav a {
-  color: var(--grey, grey);
-  text-decoration: none;
+header #navbar-upper-navbar #upper-right span {
+  transform: scale(1.1);
 }
 
-header nav a:link {
-  color: var(--grey, grey);
-}
-
-header nav a:visited {
-  color: var(--grey, grey);
-}
-
-header nav a:hover {
-  color: var(--grey, grey);
-  text-decoration: underline;
-}
-header nav a:active {
-  color: var(--grey, grey);
+header #navbar-upper-navbar #upper-right #apps {
+  justify-self: end;
 }
 
 header #navbar-lower-navbar {
-  /* background-color: black; */
-  margin-top: 0px;
-  width: 45vw;
-  margin-right: 30vw;
-  margin-left: 2vw;
-  font-size: 12px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  justify-self: center;
-  align-items: center;
-  gap: 25px;
-  height: 40px;
-}
-
-header #navbar-lower-navbar #tools {
-  margin-left: 17vw;
-}
-
-/* ##################MIDDLE################## */
-main {
-  position: absolute;
-  top: 120px;
-  left: 12vw;
-  /* display: grid;
-  grid-template-rows: 25fr repeat(auto-fill, 1fr);
-  align-items: start;
-  overflow:hidden; or auto */
-}
-main div p {
-  inline-size: 40vw;
-  margin: 0px 0px 30px 0px;
-}
-
-main div a p {
-  margin: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-main .results .sup-link p {
-  font-size: 12px;
-  color: grey;
-  text-decoration: none;
-  padding-bottom: 0px;
-}
-
-main .results .sup-link:link {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .sup-link:visited {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .sup-link:hover {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .sup-link:active {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .middle-link p {
-  font-size: 20px;
-  color: blue;
-  text-decoration: none;
-  padding-bottom: 3px;
-}
-
-main .results .middle-link:link {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .middle-link:visited {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .middle-link:hover {
-  color: grey;
-  text-decoration: none;
-}
-
-main .results .middle-link:active {
-  color: grey;
-  text-decoration: none;
-}
-
-/* 
-main a {
-  color: var(--blue, blue);
-  text-decoration: none;
-}
-
-main a:link {
-  color: var(--blue, blue);
-}
-
-main a:visited {
-  color: var(--violet, purple);
-}
-
-main a:hover {
-  color: var(--blue, blue);
-  text-decoration: underline;
-}
-main a:active {
-  color: var(--blue, blue);
-} */
-
-
-/* ##########################################
-   ##########################################
-   ##########################################
-   ########################################## 
-   ##################BOTTOM################## */
-footer {
-  position: relative;
-  bottom: 0px;
   display: grid;
-  grid-template-rows: auto auto;
-  justify-content: center;
-  align-self: flex-end;
-  opacity: 65%;
-  margin-top: 500px;
-}
-
-footer .upper-navbar {
-  background-color: rgb(240, 240, 240);
-  width: 100vw;
-  height: 45px;
-  border-bottom: 1px solid rgb(219, 219, 219);
-  padding-left: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-footer .bottom-navbar {
-  background-color: rgb(240, 240, 240);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
-  height: 45px;
-  column-gap: 200px;
-  align-items: flex-end;
-  margin: 0px 10px 15px 0px;
-}
-footer nav #bottom-navbar-left {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 30px;
-  margin-left: 30px;
-}
-
-footer nav #bottom-navbar-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 30px;
-  margin-right: 30px;
-}
-
-footer a {
-  color: var(--blue, blue);
-  text-decoration: none;
-}
-
-footer a:link {
-  color: var(--blue, blue);
-}
-
-footer a:visited {
-  color: var(--violet, purple);
-}
-
-footer a:hover {
-  color: var(--blue, blue);
-  text-decoration: underline;
-}
-footer a:active {
-  color: var(--blue, blue);
+  grid-template-columns: repeat(6, auto) 300px;
+  margin-top: 20px;
+  margin-left: 130px;
+  width: 675px;
+  justify-items: flex-end;
 }
